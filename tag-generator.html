@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free YouTube Tag Generator — Generate SEO Tags Instantly | ThumbnailGrab</title>
+<meta name="description" content="Free YouTube tag generator. Generate optimized SEO tags for your YouTube videos instantly. No sign-up required. Boost your video ranking today."/>
+<meta name="keywords" content="youtube tag generator, free youtube tags, youtube seo tags, video tags generator, youtube tags for ranking"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://thumbgrab.github.io/yt-thumbnail-downloader/tag-generator.html"/>
+<meta property="og:title" content="Free YouTube Tag Generator"/>
+<meta property="og:description" content="Generate optimized SEO tags for your YouTube videos instantly."/>
+<meta property="og:type" content="website"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--white:#fff;--off:#f7f6f3;--border:#e4e2dc;--border2:#d0cdc5;--text:#0e0e12;--sub:#5a5956;--muted:#8a8880;--light:#b5b3af;--blue:#1a56db;--blue-h:#1447c0;--blue-bg:#eef3ff;--blue-bd:#c3d1f8;--gold:#c9a84c;--gold-lt:#f0e6c8;--gold-bg:#faf7f0;--teal:#2a7d6f;--teal-lt:#d4ede9;--teal-bg:#f0faf8;--red:#c0392b;--red-lt:#fde8e6;--green:#057a55;--green-bg:#f0fdf4;--shadow-sm:0 1px 3px rgba(14,14,18,.06),0 1px 2px rgba(14,14,18,.04);--shadow:0 4px 16px rgba(14,14,18,.08);--r:16px;--r-sm:10px}
+html{scroll-behavior:smooth}
+body{background:var(--off);color:var(--text);font-family:'Epilogue',sans-serif;line-height:1.6}
+nav{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-sm)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:800;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo-icon{background:var(--blue);color:#fff;border-radius:8px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700}
+.nav-links{display:flex;gap:22px;align-items:center}
+.nav-links a{color:var(--sub);text-decoration:none;font-size:.85rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+.breadcrumb{max-width:1100px;margin:0 auto;padding:14px 24px 0;font-size:.78rem;color:var(--muted)}
+.breadcrumb a{color:var(--blue);text-decoration:none}
+.hero{background:var(--white);border-bottom:1px solid var(--border);padding:40px 24px 36px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% -10%,rgba(26,86,219,.05) 0%,transparent 70%);pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--blue-bg);border:1px solid var(--blue-bd);border-radius:20px;padding:5px 14px;font-size:.7rem;font-weight:700;color:var(--blue);letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
+h1{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;color:var(--text);margin-bottom:10px;line-height:1.2}
+h1 span{color:var(--blue)}
+.hero-sub{font-size:.92rem;color:var(--sub);max-width:520px;margin:0 auto}
+.main{max-width:760px;margin:0 auto;padding:32px 24px 60px}
+.tool-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px}
+.tool-tab-link{background:var(--white);border:1.5px solid var(--border);border-radius:20px;color:var(--sub);text-decoration:none;font-size:.78rem;font-weight:600;padding:7px 14px;transition:all .2s}
+.tool-tab-link:hover{border-color:var(--blue);color:var(--blue)}
+.tool-tab-link.active{background:var(--blue);border-color:var(--blue);color:#fff}
+.tips-card{background:var(--gold-bg);border:1px solid var(--gold-lt);border-radius:var(--r);padding:18px 20px;margin-bottom:18px}
+.tips-title{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.tips-list{display:flex;flex-direction:column;gap:5px}
+.tip-item{font-size:.78rem;color:var(--sub);display:flex;align-items:flex-start;gap:8px}
+.tip-item::before{content:'→';color:var(--gold);flex-shrink:0;font-weight:700}
+.input-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px;box-shadow:var(--shadow-sm);margin-bottom:18px}
+.input-card h2{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:800;margin-bottom:5px}
+.input-card p{font-size:.82rem;color:var(--sub);margin-bottom:20px}
+.form-group{margin-bottom:14px}
+.form-label{display:block;font-size:.75rem;font-weight:700;margin-bottom:6px}
+.form-label span{color:var(--muted);font-weight:400}
+input[type=text],select,textarea{background:var(--off);border:1.5px solid var(--border);border-radius:var(--r-sm);color:var(--text);font-family:'Epilogue',sans-serif;font-size:.875rem;font-weight:500;padding:10px 14px;width:100%;outline:none;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+input::placeholder{color:var(--light)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn-generate{width:100%;background:var(--text);color:#fff;border:none;border-radius:var(--r-sm);font-family:'Epilogue',sans-serif;font-size:.9rem;font-weight:700;padding:13px;cursor:pointer;transition:all .2s;margin-top:4px}
+.btn-generate:hover{background:#1c1c24;transform:translateY(-1px)}
+.error-box{display:none;background:var(--red-lt);border:1.5px solid #f5c6c3;border-radius:var(--r-sm);padding:12px 16px;color:var(--red);font-size:.82rem;margin-top:12px;align-items:center;gap:8px}
+.error-box.visible{display:flex}
+.result-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px;box-shadow:var(--shadow-sm);display:none}
+.result-card.visible{display:block}
+.result-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.result-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:800}
+.result-badge{background:var(--green-bg);color:var(--green);border-radius:20px;font-size:.68rem;font-weight:700;padding:3px 10px;border:1px solid #bbf7d0}
+.tags-wrap{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.tag-pill{background:var(--blue-bg);border:1px solid var(--blue-bd);border-radius:20px;color:var(--blue);font-size:.75rem;font-weight:600;padding:4px 12px;cursor:pointer;transition:all .2s;user-select:none}
+.tag-pill:hover{background:var(--blue);color:#fff}
+.tag-pill.off{opacity:.3}
+.copy-row{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.btn-copy{background:var(--off);border:1.5px solid var(--border);border-radius:var(--r-sm);color:var(--sub);cursor:pointer;font-family:'Epilogue',sans-serif;font-size:.78rem;font-weight:600;padding:8px 14px;transition:all .2s}
+.btn-copy:hover{border-color:var(--text);color:var(--text)}
+.btn-copy.copied{background:var(--green-bg);border-color:#bbf7d0;color:var(--green)}
+.loader{display:none;flex-direction:column;align-items:center;gap:12px;padding:28px}
+.loader.visible{display:flex}
+.loader-dots{display:flex;gap:6px}
+.ldot{width:8px;height:8px;border-radius:50%;background:var(--blue);animation:bounce .6s infinite alternate}
+.ldot:nth-child(2){animation-delay:.15s}.ldot:nth-child(3){animation-delay:.3s}
+.loader-text{font-size:.82rem;color:var(--sub)}
+@keyframes bounce{from{transform:translateY(0);opacity:.4}to{transform:translateY(-8px);opacity:1}}
+.article{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:32px;box-shadow:var(--shadow-sm);margin-top:28px}
+.article h2{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.article h3{font-size:1rem;font-weight:700;margin:20px 0 8px}
+.article p{font-size:.875rem;color:var(--sub);margin-bottom:12px;line-height:1.75}
+.article ul{padding-left:22px;margin-bottom:12px}
+.article li{font-size:.875rem;color:var(--sub);margin-bottom:6px}
+.disclaimer{background:var(--off);border:1px solid var(--border);border-radius:var(--r-sm);padding:16px 20px;margin-top:24px;font-size:.78rem;color:var(--muted);line-height:1.6}
+.disclaimer strong{color:var(--sub)}
+footer{background:var(--text);color:rgba(255,255,255,.6);padding:36px 24px;text-align:center;margin-top:40px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:800;color:#fff;margin-bottom:10px}
+.footer-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.footer-links a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.76rem}
+.footer-links a:hover{color:#fff}
+.footer-copy{font-size:.72rem;color:rgba(255,255,255,.3)}
+@media(max-width:700px){.nav-links{display:none}.form-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">YT</span>ThumbnailGrab</a>
+    <div class="nav-links">
+      <a href="index.html">Thumbnail Downloader</a>
+      <a href="tag-generator.html">YouTube Tools</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+<div class="breadcrumb"><a href="index.html">Home</a> → <a href="tag-generator.html">YouTube Tools</a> → Tag Generator</div>
+<div class="hero">
+  <div class="hero-badge">🏷️ Free Tool</div>
+  <h1>YouTube <span>Tag Generator</span></h1>
+  <p class="hero-sub">Generate optimized SEO tags for your YouTube videos instantly. Boost your search ranking and get discovered by more viewers.</p>
+</div>
+<div class="main">
+  <div class="tool-tabs">
+    <a href="tag-generator.html" class="tool-tab-link active">🏷️ Tags</a>
+    <a href="title-generator.html" class="tool-tab-link">✍️ Titles</a>
+    <a href="description-generator.html" class="tool-tab-link">📄 Description</a>
+    <a href="hashtag-generator.html" class="tool-tab-link"># Hashtags</a>
+    <a href="script-generator.html" class="tool-tab-link">🎬 Script</a>
+  </div>
+  <div class="tips-card">
+    <div class="tips-title">✦ Tips for Better Tags</div>
+    <div class="tips-list">
+      <div class="tip-item">Mix broad and specific tags for maximum reach</div>
+      <div class="tip-item">Include your main keyword in the first 3 tags</div>
+      <div class="tip-item">YouTube allows up to 500 characters total for all tags</div>
+      <div class="tip-item">Click any tag to deselect before copying</div>
+    </div>
+  </div>
+  <div class="input-card">
+    <h2>Generate Your Tags</h2>
+    <p>Enter your video topic and get optimized tags to help your video rank higher.</p>
+    <div class="form-group">
+      <label class="form-label">Video Topic <span>*</span></label>
+      <input type="text" id="tagTopic" placeholder="e.g. How to make pasta at home" onkeydown="if(event.key==='Enter')generateTags()"/>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Category</label>
+        <select id="tagCategory">
+          <option>General</option><option>Gaming</option><option>Cooking & Food</option><option>Technology</option><option>Finance & Business</option><option>Health & Fitness</option><option>Travel</option><option>Education</option><option>Entertainment</option><option>Beauty & Fashion</option><option>Music</option><option>Sports</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Number of Tags</label>
+        <select id="tagCount"><option value="15">15 tags</option><option value="25" selected>25 tags</option><option value="35">35 tags</option><option value="50">50 tags</option></select>
+      </div>
+    </div>
+    <button class="btn-generate" onclick="generateTags()">🏷️ Generate Tags</button>
+    <div class="error-box" id="tagError"><span>⚠</span><span id="tagErrorMsg"></span></div>
+  </div>
+  <div class="loader" id="tagLoader"><div class="loader-dots"><div class="ldot"></div><div class="ldot"></div><div class="ldot"></div></div><div class="loader-text">Generating optimized tags…</div></div>
+  <div class="result-card" id="tagResult">
+    <div class="result-header"><div class="result-title">🏷️ Generated Tags</div><span class="result-badge">✓ READY</span></div>
+    <div class="tags-wrap" id="tagPills"></div>
+    <div style="font-size:.75rem;color:var(--muted);margin-bottom:10px"><span id="tagCharCount">0</span>/500 characters · Click tag to deselect</div>
+    <div class="copy-row">
+      <button class="btn-copy" id="copyTagsBtn" onclick="copyTags()">📋 Copy All Tags</button>
+      <button class="btn-copy" onclick="generateTags()">🔄 Regenerate</button>
+    </div>
+  </div>
+
+  <div class="article">
+    <h2>How to Use YouTube Tags Effectively</h2>
+    <p>YouTube tags are descriptive keywords you add to your videos to help YouTube understand your content and context. While tags are not the biggest ranking factor, they still play an important role in helping your videos get discovered, especially for new channels and niche topics.</p>
+    <h3>Why Tags Matter</h3>
+    <p>Tags help YouTube's algorithm categorize your video and understand what it's about. They are particularly useful for catching common misspellings of your target keywords and for associating your video with related content. When used correctly, good tags can help your video appear in the suggested videos sidebar.</p>
+    <h3>Best Practices for YouTube Tags</h3>
+    <ul>
+      <li>Use your main keyword as your very first tag</li>
+      <li>Include a mix of broad tags and specific long-tail tags</li>
+      <li>Add common variations and misspellings of your keywords</li>
+      <li>Keep tags relevant to your actual video content</li>
+      <li>Use all available character space wisely (up to 500 characters)</li>
+      <li>Don't use misleading tags — this violates YouTube policy</li>
+    </ul>
+    <h3>How Many Tags Should You Use?</h3>
+    <p>YouTube allows up to 500 characters worth of tags. Most successful creators use between 15 and 30 tags per video. Focus on quality and relevance rather than stuffing in as many tags as possible. A handful of highly relevant tags will always outperform dozens of loosely related ones.</p>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> This YouTube Tag Generator is a free tool provided for informational and educational purposes only. The generated tags are suggestions based on your input and general SEO best practices. We do not guarantee any specific results, rankings, views, or performance on YouTube. YouTube's algorithm considers many factors beyond tags. This tool is not affiliated with, endorsed by, or connected to YouTube or Google LLC. Always ensure your tags comply with YouTube's Community Guidelines and Terms of Service. Use this tool at your own discretion.
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">ThumbnailGrab</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="tag-generator.html">Tags</a><a href="title-generator.html">Titles</a><a href="description-generator.html">Description</a><a href="hashtag-generator.html">Hashtags</a><a href="script-generator.html">Script</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a>
+  </div>
+  <div class="footer-copy">© 2026 ThumbnailGrab. Not affiliated with YouTube or Google LLC.</div>
+</footer>
+<script>
+const TAG_DB={'General':['tutorial','howto','tips','guide','learn','beginners','2026','viral','trending','popular','educational','informative','helpful','stepbystep','explained'],'Gaming':['gaming','gamer','gameplay','videogames','playthrough','walkthrough','gamingcommunity','pcgaming','consolegaming','esports','streamer','gaming2026','gamingsetup','games','newgame'],'Cooking & Food':['cooking','recipe','food','homemade','easyrecipe','delicious','foodie','chef','kitchentips','mealprep','quickrecipe','tasty','foodlover','cookingvideo','dinnerideas'],'Technology':['tech','technology','gadgets','review','unboxing','techtips','smartphone','software','coding','programming','techreview','innovation','digitaltips','technews','techlife'],'Finance & Business':['finance','money','investing','wealth','business','entrepreneurship','personalfinance','savings','investment','financetips','stockmarket','budgeting','financialfreedom','makemoney','sidehustle'],'Health & Fitness':['fitness','workout','health','exercise','gym','nutrition','weightloss','healthylifestyle','training','wellness','fitnessmotivation','bodybuilding','cardio','homeworkout','fitlife'],'Travel':['travel','adventure','vlog','travelvlog','explore','wanderlust','vacation','traveling','travelguide','traveltips','worldtravel','backpacking','travellife','destination','travelblogger'],'Education':['education','learning','study','student','school','knowledge','learnwithme','studywithme','academic','educational','studytips','selfimprovement','onlinelearning','tutoring','studymotivation'],'Entertainment':['entertainment','funny','comedy','vlog','viral','trending','fun','reaction','challenge','contentcreator','youtuber','subscribe','watchthis','mustsee','foryou'],'Beauty & Fashion':['beauty','makeup','fashion','style','skincare','beautytips','makeuptutorial','ootd','fashionista','beautyroutine','glam','cosmetics','skincareroutine','fashiontrends','makeupartist'],'Music':['music','song','cover','original','musician','singer','guitar','piano','beat','musicvideo','newmusic','acoustic','livemusic','musicproduction','songwriter'],'Sports':['sports','athlete','training','fitness','game','match','highlights','sportsmotivation','sportslife','coaching','teamwork','championship','sportsclips','athletelife','winning']};
+function shuffle(a){return a.sort(()=>Math.random()-.5);}
+let gTags=[];
+function generateTags(){
+  const topic=document.getElementById('tagTopic').value.trim();
+  document.getElementById('tagError').classList.remove('visible');
+  if(!topic){document.getElementById('tagErrorMsg').textContent='Please enter a video topic.';document.getElementById('tagError').classList.add('visible');return;}
+  document.getElementById('tagLoader').classList.add('visible');
+  document.getElementById('tagResult').classList.remove('visible');
+  setTimeout(()=>{
+    const count=parseInt(document.getElementById('tagCount').value);
+    const cat=document.getElementById('tagCategory').value;
+    const words=topic.toLowerCase().split(/\s+/);
+    const catTags=TAG_DB[cat]||TAG_DB['General'];
+    let tags=[topic.toLowerCase(),topic.toLowerCase()+' tutorial',topic.toLowerCase()+' guide',topic.toLowerCase()+' tips',topic.toLowerCase()+' for beginners','how to '+topic.toLowerCase(),'best '+topic.toLowerCase(),topic.toLowerCase()+' 2026',topic.toLowerCase()+' explained',topic.toLowerCase()+' step by step'];
+    words.forEach(w=>{if(w.length>3){tags.push(w,w+' tutorial',w+' tips','learn '+w,w+' for beginners',w+' guide');}});
+    tags=[...tags,...shuffle([...catTags])];
+    tags=[...new Set(tags)].map(t=>t.trim()).filter(t=>t.length>2&&t.length<50);
+    gTags=tags.slice(0,count);
+    document.getElementById('tagPills').innerHTML=gTags.map((t,i)=>`<span class="tag-pill" onclick="toggleTag(${i})" id="tag-${i}">${t}</span>`).join('');
+    updateCount();
+    document.getElementById('tagLoader').classList.remove('visible');
+    document.getElementById('tagResult').classList.add('visible');
+  },800);
+}
+function toggleTag(i){document.getElementById('tag-'+i).classList.toggle('off');updateCount();}
+function updateCount(){const a=gTags.filter((_,i)=>!document.getElementById('tag-'+i)?.classList.contains('off'));document.getElementById('tagCharCount').textContent=a.join(', ').length;}
+function copyTags(){const a=gTags.filter((_,i)=>!document.getElementById('tag-'+i)?.classList.contains('off'));navigator.clipboard.writeText(a.join(', '));const b=document.getElementById('copyTagsBtn');b.textContent='✓ Copied!';b.classList.add('copied');setTimeout(()=>{b.textContent='📋 Copy All Tags';b.classList.remove('copied');},2000);}
+</script>
+</body>
+</html>
