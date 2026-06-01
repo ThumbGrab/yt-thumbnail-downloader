@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free YouTube Title Generator — Catchy Click-Worthy Titles | ThumbnailGrab</title>
+<meta name="description" content="Free YouTube title generator. Create catchy, click-worthy titles that rank and get more views. No sign-up required."/>
+<meta name="keywords" content="youtube title generator, catchy youtube titles, youtube video title ideas, clickable titles, youtube title maker"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://thumbgrab.github.io/yt-thumbnail-downloader/title-generator.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--white:#fff;--off:#f7f6f3;--border:#e4e2dc;--border2:#d0cdc5;--text:#0e0e12;--sub:#5a5956;--muted:#8a8880;--light:#b5b3af;--blue:#1a56db;--blue-h:#1447c0;--blue-bg:#eef3ff;--blue-bd:#c3d1f8;--gold:#c9a84c;--gold-lt:#f0e6c8;--gold-bg:#faf7f0;--red:#c0392b;--red-lt:#fde8e6;--green:#057a55;--green-bg:#f0fdf4;--shadow-sm:0 1px 3px rgba(14,14,18,.06);--r:16px;--r-sm:10px}
+html{scroll-behavior:smooth}
+body{background:var(--off);color:var(--text);font-family:'Epilogue',sans-serif;line-height:1.6}
+nav{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-sm)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:800;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo-icon{background:var(--blue);color:#fff;border-radius:8px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700}
+.nav-links{display:flex;gap:22px;align-items:center}
+.nav-links a{color:var(--sub);text-decoration:none;font-size:.85rem;font-weight:500}
+.nav-links a:hover{color:var(--blue)}
+.breadcrumb{max-width:1100px;margin:0 auto;padding:14px 24px 0;font-size:.78rem;color:var(--muted)}
+.breadcrumb a{color:var(--blue);text-decoration:none}
+.hero{background:var(--white);border-bottom:1px solid var(--border);padding:40px 24px 36px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% -10%,rgba(26,86,219,.05) 0%,transparent 70%);pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--blue-bg);border:1px solid var(--blue-bd);border-radius:20px;padding:5px 14px;font-size:.7rem;font-weight:700;color:var(--blue);letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
+h1{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;margin-bottom:10px;line-height:1.2}
+h1 span{color:var(--blue)}
+.hero-sub{font-size:.92rem;color:var(--sub);max-width:520px;margin:0 auto}
+.main{max-width:760px;margin:0 auto;padding:32px 24px 60px}
+.tool-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px}
+.tool-tab-link{background:var(--white);border:1.5px solid var(--border);border-radius:20px;color:var(--sub);text-decoration:none;font-size:.78rem;font-weight:600;padding:7px 14px;transition:all .2s}
+.tool-tab-link:hover{border-color:var(--blue);color:var(--blue)}
+.tool-tab-link.active{background:var(--blue);border-color:var(--blue);color:#fff}
+.tips-card{background:var(--gold-bg);border:1px solid var(--gold-lt);border-radius:var(--r);padding:18px 20px;margin-bottom:18px}
+.tips-title{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.tips-list{display:flex;flex-direction:column;gap:5px}
+.tip-item{font-size:.78rem;color:var(--sub);display:flex;align-items:flex-start;gap:8px}
+.tip-item::before{content:'→';color:var(--gold);flex-shrink:0;font-weight:700}
+.input-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px;box-shadow:var(--shadow-sm);margin-bottom:18px}
+.input-card h2{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:800;margin-bottom:5px}
+.input-card p{font-size:.82rem;color:var(--sub);margin-bottom:20px}
+.form-group{margin-bottom:14px}
+.form-label{display:block;font-size:.75rem;font-weight:700;margin-bottom:6px}
+.form-label span{color:var(--muted);font-weight:400}
+input[type=text],select{background:var(--off);border:1.5px solid var(--border);border-radius:var(--r-sm);color:var(--text);font-family:'Epilogue',sans-serif;font-size:.875rem;font-weight:500;padding:10px 14px;width:100%;outline:none;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+input::placeholder{color:var(--light)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn-generate{width:100%;background:var(--text);color:#fff;border:none;border-radius:var(--r-sm);font-family:'Epilogue',sans-serif;font-size:.9rem;font-weight:700;padding:13px;cursor:pointer;transition:all .2s;margin-top:4px}
+.btn-generate:hover{background:#1c1c24;transform:translateY(-1px)}
+.error-box{display:none;background:var(--red-lt);border:1.5px solid #f5c6c3;border-radius:var(--r-sm);padding:12px 16px;color:var(--red);font-size:.82rem;margin-top:12px;align-items:center;gap:8px}
+.error-box.visible{display:flex}
+.result-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px;box-shadow:var(--shadow-sm);display:none}
+.result-card.visible{display:block}
+.result-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.result-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:800}
+.result-badge{background:var(--green-bg);color:var(--green);border-radius:20px;font-size:.68rem;font-weight:700;padding:3px 10px;border:1px solid #bbf7d0}
+.title-item{background:var(--off);border:1.5px solid var(--border);border-radius:var(--r-sm);padding:13px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.title-text{font-size:.875rem;font-weight:600;flex:1}
+.title-copy{background:var(--white);border:1.5px solid var(--border);border-radius:8px;color:var(--sub);cursor:pointer;font-family:'Epilogue',sans-serif;font-size:.72rem;font-weight:600;padding:6px 12px;white-space:nowrap;flex-shrink:0}
+.title-copy:hover{border-color:var(--blue);color:var(--blue)}
+.copy-row{display:flex;gap:8px;margin-top:14px}
+.btn-copy{background:var(--off);border:1.5px solid var(--border);border-radius:var(--r-sm);color:var(--sub);cursor:pointer;font-family:'Epilogue',sans-serif;font-size:.78rem;font-weight:600;padding:8px 14px}
+.btn-copy:hover{border-color:var(--text);color:var(--text)}
+.loader{display:none;flex-direction:column;align-items:center;gap:12px;padding:28px}
+.loader.visible{display:flex}
+.loader-dots{display:flex;gap:6px}
+.ldot{width:8px;height:8px;border-radius:50%;background:var(--blue);animation:bounce .6s infinite alternate}
+.ldot:nth-child(2){animation-delay:.15s}.ldot:nth-child(3){animation-delay:.3s}
+.loader-text{font-size:.82rem;color:var(--sub)}
+@keyframes bounce{from{transform:translateY(0);opacity:.4}to{transform:translateY(-8px);opacity:1}}
+.article{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:32px;box-shadow:var(--shadow-sm);margin-top:28px}
+.article h2{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.article h3{font-size:1rem;font-weight:700;margin:20px 0 8px}
+.article p{font-size:.875rem;color:var(--sub);margin-bottom:12px;line-height:1.75}
+.article ul{padding-left:22px;margin-bottom:12px}
+.article li{font-size:.875rem;color:var(--sub);margin-bottom:6px}
+.disclaimer{background:var(--off);border:1px solid var(--border);border-radius:var(--r-sm);padding:16px 20px;margin-top:24px;font-size:.78rem;color:var(--muted);line-height:1.6}
+.disclaimer strong{color:var(--sub)}
+footer{background:var(--text);color:rgba(255,255,255,.6);padding:36px 24px;text-align:center;margin-top:40px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:800;color:#fff;margin-bottom:10px}
+.footer-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.footer-links a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.76rem}
+.footer-links a:hover{color:#fff}
+.footer-copy{font-size:.72rem;color:rgba(255,255,255,.3)}
+@media(max-width:700px){.nav-links{display:none}.form-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">YT</span>ThumbnailGrab</a>
+    <div class="nav-links">
+      <a href="index.html">Thumbnail Downloader</a>
+      <a href="tag-generator.html">YouTube Tools</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+<div class="breadcrumb"><a href="index.html">Home</a> → <a href="tag-generator.html">YouTube Tools</a> → Title Generator</div>
+<div class="hero">
+  <div class="hero-badge">✍️ Free Tool</div>
+  <h1>YouTube <span>Title Generator</span></h1>
+  <p class="hero-sub">Create catchy, click-worthy titles that rank higher and get more views. Generate 8 unique titles in seconds.</p>
+</div>
+<div class="main">
+  <div class="tool-tabs">
+    <a href="tag-generator.html" class="tool-tab-link">🏷️ Tags</a>
+    <a href="title-generator.html" class="tool-tab-link active">✍️ Titles</a>
+    <a href="description-generator.html" class="tool-tab-link">📄 Description</a>
+    <a href="hashtag-generator.html" class="tool-tab-link"># Hashtags</a>
+    <a href="script-generator.html" class="tool-tab-link">🎬 Script</a>
+  </div>
+  <div class="tips-card">
+    <div class="tips-title">✦ Tips for Better Titles</div>
+    <div class="tips-list">
+      <div class="tip-item">Keep titles between 60-70 characters for best display</div>
+      <div class="tip-item">Put the most important keyword near the beginning</div>
+      <div class="tip-item">Use numbers and power words to boost click-through rate</div>
+      <div class="tip-item">Create curiosity without being clickbait</div>
+    </div>
+  </div>
+  <div class="input-card">
+    <h2>Generate Your Titles</h2>
+    <p>Enter your video topic and get 8 compelling title ideas instantly.</p>
+    <div class="form-group">
+      <label class="form-label">Video Topic <span>*</span></label>
+      <input type="text" id="titleTopic" placeholder="e.g. Beginner guitar lessons for adults" onkeydown="if(event.key==='Enter')generateTitles()"/>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Style</label>
+        <select id="titleStyle"><option>How-To</option><option>Top List</option><option>Question</option><option>Shocking</option><option>Story</option><option>Review</option><option>Challenge</option></select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tone</label>
+        <select id="titleTone"><option>Professional</option><option>Casual</option><option>Urgent</option><option>Inspirational</option><option>Educational</option></select>
+      </div>
+    </div>
+    <button class="btn-generate" onclick="generateTitles()">✍️ Generate Titles</button>
+    <div class="error-box" id="titleError"><span>⚠</span><span id="titleErrorMsg"></span></div>
+  </div>
+  <div class="loader" id="titleLoader"><div class="loader-dots"><div class="ldot"></div><div class="ldot"></div><div class="ldot"></div></div><div class="loader-text">Crafting compelling titles…</div></div>
+  <div class="result-card" id="titleResult">
+    <div class="result-header"><div class="result-title">✍️ Generated Titles</div><span class="result-badge">✓ READY</span></div>
+    <div id="titleList"></div>
+    <div class="copy-row"><button class="btn-copy" onclick="generateTitles()">🔄 Regenerate</button></div>
+  </div>
+
+  <div class="article">
+    <h2>How to Write YouTube Titles That Get Clicks</h2>
+    <p>Your video title is one of the two most important factors (along with your thumbnail) that determine whether someone clicks on your video. A great title can dramatically increase your click-through rate and help your video reach a wider audience.</p>
+    <h3>What Makes a Great YouTube Title</h3>
+    <p>The best YouTube titles create curiosity, communicate clear value, and include your target keyword. They make the viewer feel like they need to watch to find out more, without resorting to misleading clickbait that hurts your channel in the long run.</p>
+    <h3>Title Writing Best Practices</h3>
+    <ul>
+      <li>Keep your title between 60-70 characters so it doesn't get cut off</li>
+      <li>Place your main keyword near the beginning of the title</li>
+      <li>Use numbers — titles with numbers often get more clicks</li>
+      <li>Add power words like "ultimate," "proven," or "simple"</li>
+      <li>Make a clear promise about what the viewer will learn or gain</li>
+      <li>Avoid ALL CAPS and excessive punctuation</li>
+    </ul>
+    <h3>Match Your Title to Your Thumbnail</h3>
+    <p>Your title and thumbnail should work together as a team. The thumbnail catches the eye and the title provides context. Together they should create an irresistible reason to click. Avoid repeating the exact same text in both — instead, let them complement each other.</p>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> This YouTube Title Generator is a free tool provided for informational and educational purposes only. Generated titles are suggestions based on proven title formulas and your input. We do not guarantee any specific results, click-through rates, views, or rankings. Always customize titles to accurately represent your content and comply with YouTube's Community Guidelines. This tool is not affiliated with YouTube or Google LLC.
+  </div>
+</div>
+<footer>
+  <div class="footer-logo">ThumbnailGrab</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="tag-generator.html">Tags</a><a href="title-generator.html">Titles</a><a href="description-generator.html">Description</a><a href="hashtag-generator.html">Hashtags</a><a href="script-generator.html">Script</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a>
+  </div>
+  <div class="footer-copy">© 2026 ThumbnailGrab. Not affiliated with YouTube or Google LLC.</div>
+</footer>
+<script>
+const POWER=['Ultimate','Complete','Perfect','Best','Easy','Simple','Quick','Proven','Secret','Amazing','Powerful','Effective','Top','Essential','Beginner'];
+const NUMS=['3','5','7','10','12','15','20'];
+const TPL={'How-To':['How to {t} in {n} Simple Steps','How to {t} Like a Pro ({y})','The Complete Guide to {t}','How to {t} for Beginners','How I {t} — Full Tutorial','How to {t} Fast and Easy','Learn How to {t} Today','How to {t} — {a} Guide'],'Top List':['{n} {a} Ways to {t}','Top {n} Tips for {t}','{n} Things You Need to Know About {t}','The {n} Best {t} Methods','{n} {a} {t} Hacks That Work','Top {n} {t} Mistakes to Avoid','{n} Secrets to {t}','The Only {n} {t} Tips You Need'],'Question':['Is {t} Worth It in {y}?','Why Everyone Is Talking About {t}','What Happens When You {t}?','Can You Really {t}? The Truth','Should You {t}? Watch This First','What I Wish I Knew Before {t}','Does {t} Actually Work?','Why You Should Start {t} Today'],'Shocking':['I Tried {t} for 30 Days — Shocking Results','The Truth About {t} Nobody Tells You','{t} Changed My Life — Here is How','I Cannot Believe {t} Actually Worked','Stop {t} Until You Watch This','The {a} Truth About {t}','Warning: Do Not {t} Without Watching This','{t} — What They Do Not Want You to Know'],'Story':['My {t} Journey — {y} Update','How {t} Changed Everything for Me','My {a} Experience with {t}','I Started {t} and Here is What Happened','The Day I Discovered {t}','My Honest {t} Story','From Zero to {a}: My {t} Journey','Why I Started {t} and Never Looked Back'],'Review':['{t} Review — Honest Opinion {y}','Is {t} Worth Your Time and Money?','{t} — {n} Months Later Review','The {a} {t} Review You Need to See','I Tested {t} So You Do Not Have To','{t} vs Everything Else — Full Comparison','Honest Review: {t} ({y})','The Good and Bad of {t}'],'Challenge':['I Did {t} Every Day for {n} Days','The {t} Challenge — Day by Day','{n} Day {t} Challenge Results','Can I {t} in Under {n} Minutes?','I Accepted the {t} Challenge','{t} for {n} Days Straight','The {a} {t} Challenge','I Challenged Myself to {t}']};
+function shuffle(a){return a.sort(()=>Math.random()-.5);}
+function pick(a){return a[Math.floor(Math.random()*a.length)];}
+function generateTitles(){
+  const topic=document.getElementById('titleTopic').value.trim();
+  document.getElementById('titleError').classList.remove('visible');
+  if(!topic){document.getElementById('titleErrorMsg').textContent='Please enter a video topic.';document.getElementById('titleError').classList.add('visible');return;}
+  document.getElementById('titleLoader').classList.add('visible');
+  document.getElementById('titleResult').classList.remove('visible');
+  setTimeout(()=>{
+    const style=document.getElementById('titleStyle').value;
+    const tpl=TPL[style]||TPL['How-To'];
+    const a=pick(POWER),n=pick(NUMS),y='2026';
+    const titles=shuffle([...tpl]).slice(0,8).map(t=>t.replace(/{t}/g,topic).replace(/{a}/g,a).replace(/{n}/g,n).replace(/{y}/g,y));
+    document.getElementById('titleList').innerHTML=titles.map(t=>`<div class="title-item"><span class="title-text">${t}</span><button class="title-copy" onclick="cp(this,'${t.replace(/'/g,"\\'")}')">Copy</button></div>`).join('');
+    document.getElementById('titleLoader').classList.remove('visible');
+    document.getElementById('titleResult').classList.add('visible');
+  },800);
+}
+function cp(btn,text){navigator.clipboard.writeText(text);btn.textContent='✓ Copied';btn.style.color='var(--green)';btn.style.borderColor='#bbf7d0';btn.style.background='var(--green-bg)';setTimeout(()=>{btn.textContent='Copy';btn.style.color='';btn.style.borderColor='';btn.style.background='';},2000);}
+</script>
+</body>
+</html>
