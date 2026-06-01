@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free YouTube Script Generator — Full Video Scripts | ThumbnailGrab</title>
+<meta name="description" content="Free YouTube script generator. Create complete video scripts with hook, intro, main content, and outro instantly. No sign-up required."/>
+<meta name="keywords" content="youtube script generator, video script template, youtube script writer, how to write youtube script, free script generator"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://thumbgrab.github.io/yt-thumbnail-downloader/script-generator.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--white:#fff;--off:#f7f6f3;--border:#e4e2dc;--border2:#d0cdc5;--text:#0e0e12;--sub:#5a5956;--muted:#8a8880;--light:#b5b3af;--blue:#1a56db;--blue-bg:#eef3ff;--blue-bd:#c3d1f8;--gold:#c9a84c;--gold-lt:#f0e6c8;--gold-bg:#faf7f0;--red:#c0392b;--red-lt:#fde8e6;--green:#057a55;--green-bg:#f0fdf4;--shadow-sm:0 1px 3px rgba(14,14,18,.06);--r:16px;--r-sm:10px}
+html{scroll-behavior:smooth}
+body{background:var(--off);color:var(--text);font-family:'Epilogue',sans-serif;line-height:1.6}
+nav{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-sm)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:800;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo-icon{background:var(--blue);color:#fff;border-radius:8px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700}
+.nav-links{display:flex;gap:22px;align-items:center}
+.nav-links a{color:var(--sub);text-decoration:none;font-size:.85rem;font-weight:500}
+.nav-links a:hover{color:var(--blue)}
+.breadcrumb{max-width:1100px;margin:0 auto;padding:14px 24px 0;font-size:.78rem;color:var(--muted)}
+.breadcrumb a{color:var(--blue);text-decoration:none}
+.hero{background:var(--white);border-bottom:1px solid var(--border);padding:40px 24px 36px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% -10%,rgba(26,86,219,.05) 0%,transparent 70%);pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--blue-bg);border:1px solid var(--blue-bd);border-radius:20px;padding:5px 14px;font-size:.7rem;font-weight:700;color:var(--blue);letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
+h1{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;margin-bottom:10px;line-height:1.2}
+h1 span{color:var(--blue)}
+.hero-sub{font-size:.92rem;color:var(--sub);max-width:520px;margin:0 auto}
+.main{max-width:760px;margin:0 auto;padding:32px 24px 60px}
+.tool-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px}
+.tool-tab-link{background:var(--white);border:1.5px solid var(--border);border-radius:20px;color:var(--sub);text-decoration:none;font-size:.78rem;font-weight:600;padding:7px 14px;transition:all .2s}
+.tool-tab-link:hover{border-color:var(--blue);color:var(--blue)}
+.tool-tab-link.active{background:var(--blue);border-color:var(--blue);color:#fff}
+.tips-card{background:var(--gold-bg);border:1px solid var(--gold-lt);border-radius:var(--r);padding:18px 20px;margin-bottom:18px}
+.tips-title{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.tips-list{display:flex;flex-direction:column;gap:5px}
+.tip-item{font-size:.78rem;color:var(--sub);display:flex;align-items:flex-start;gap:8px}
+.tip-item::before{content:'→';color:var(--gold);flex-shrink:0;font-weight:700}
+.input-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px;box-shadow:var(--shadow-sm);margin-bottom:18px}
+.input-card h2{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:800;margin-bottom:5px}
+.input-card p{font-size:.82rem;color:var(--sub);margin-bottom:20px}
+.form-group{margin-bottom:14px}
+.form-label{display:block;font-size:.75rem;font-weight:700;margin-bottom:6px}
+.form-label span{color:var(--muted);font-weight:400}
+input[type=text],select,textarea{background:var(--off);border:1.5px solid var(--border);border-radius:var(--r-sm);color:var(--text);font-family:'Epilogue',sans-serif;font-size:.875rem;font-weight:500;padding:10px 14px;width:100%;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+input::placeholder,textarea::placeholder{color:var(--light)}
+textarea{resize:vertical;min-height:88px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn-generate{width:100%;background:var(--text);color:#fff;border:none;border-radius:var(--r-sm);font-family:'Epilogue',sans-serif;font-size:.9rem;font-weight:700;padding:13px;cursor:pointer;transition:all .2s;margin-top:4px}
+.btn-generate:hover{background:#1c1c24;transform:translateY(-1px)}
+.error-box{display:none;background:var(--red-lt);border:1.5px solid #f5c6c3;border-radius:var(--r-sm);padding:12px 16px;color:var(--red);font-size:.82rem;margin-top:12px;align-items:center;gap:8px}
+.error-box.visible{display:flex}
+.result-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px;box-shadow:var(--shadow-sm);display:none}
+.result-card.visible{display:block}
+.result-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.result-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:800}
+.result-badge{background:var(--green-bg);color:var(--green);border-radius:20px;font-size:.68rem;font-weight:700;padding:3px 10px;border:1px solid #bbf7d0}
+.result-content{font-size:.875rem;color:var(--sub);line-height:1.8;white-space:pre-wrap;word-break:break-word}
+.copy-row{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.btn-copy{background:var(--off);border:1.5px solid var(--border);border-radius:var(--r-sm);color:var(--sub);cursor:pointer;font-family:'Epilogue',sans-serif;font-size:.78rem;font-weight:600;padding:8px 14px}
+.btn-copy:hover{border-color:var(--text);color:var(--text)}
+.btn-copy.copied{background:var(--green-bg);border-color:#bbf7d0;color:var(--green)}
+.loader{display:none;flex-direction:column;align-items:center;gap:12px;padding:28px}
+.loader.visible{display:flex}
+.loader-dots{display:flex;gap:6px}
+.ldot{width:8px;height:8px;border-radius:50%;background:var(--blue);animation:bounce .6s infinite alternate}
+.ldot:nth-child(2){animation-delay:.15s}.ldot:nth-child(3){animation-delay:.3s}
+.loader-text{font-size:.82rem;color:var(--sub)}
+@keyframes bounce{from{transform:translateY(0);opacity:.4}to{transform:translateY(-8px);opacity:1}}
+.article{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:32px;box-shadow:var(--shadow-sm);margin-top:28px}
+.article h2{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.article h3{font-size:1rem;font-weight:700;margin:20px 0 8px}
+.article p{font-size:.875rem;color:var(--sub);margin-bottom:12px;line-height:1.75}
+.article ul{padding-left:22px;margin-bottom:12px}
+.article li{font-size:.875rem;color:var(--sub);margin-bottom:6px}
+.disclaimer{background:var(--off);border:1px solid var(--border);border-radius:var(--r-sm);padding:16px 20px;margin-top:24px;font-size:.78rem;color:var(--muted);line-height:1.6}
+.disclaimer strong{color:var(--sub)}
+footer{background:var(--text);color:rgba(255,255,255,.6);padding:36px 24px;text-align:center;margin-top:40px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:800;color:#fff;margin-bottom:10px}
+.footer-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.footer-links a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.76rem}
+.footer-links a:hover{color:#fff}
+.footer-copy{font-size:.72rem;color:rgba(255,255,255,.3)}
+@media(max-width:700px){.nav-links{display:none}.form-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">YT</span>ThumbnailGrab</a>
+    <div class="nav-links">
+      <a href="index.html">Thumbnail Downloader</a>
+      <a href="tag-generator.html">YouTube Tools</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+<div class="breadcrumb"><a href="index.html">Home</a> → <a href="tag-generator.html">YouTube Tools</a> → Script Generator</div>
+<div class="hero">
+  <div class="hero-badge">🎬 Free Tool</div>
+  <h1>YouTube <span>Script Generator</span></h1>
+  <p class="hero-sub">Generate a complete video script with hook, intro, main content, and outro. Never face a blank page again.</p>
+</div>
+<div class="main">
+  <div class="tool-tabs">
+    <a href="tag-generator.html" class="tool-tab-link">🏷️ Tags</a>
+    <a href="title-generator.html" class="tool-tab-link">✍️ Titles</a>
+    <a href="description-generator.html" class="tool-tab-link">📄 Description</a>
+    <a href="hashtag-generator.html" class="tool-tab-link"># Hashtags</a>
+    <a href="script-generator.html" class="tool-tab-link active">🎬 Script</a>
+  </div>
+  <div class="tips-card">
+    <div class="tips-title">✦ Tips for Better Scripts</div>
+    <div class="tips-list">
+      <div class="tip-item">Hook viewers in the first 30 seconds or they leave</div>
+      <div class="tip-item">Write how you talk — not how you write essays</div>
+      <div class="tip-item">Add [PAUSE] markers for natural breaks while filming</div>
+      <div class="tip-item">End with a strong call to action for likes and subscribes</div>
+    </div>
+  </div>
+  <div class="input-card">
+    <h2>Generate Your Script</h2>
+    <p>Enter your video topic and key points to get a complete ready-to-film script.</p>
+    <div class="form-group">
+      <label class="form-label">Video Title / Topic *</label>
+      <input type="text" id="scriptTitle" placeholder="e.g. 5 Morning Habits That Changed My Life"/>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Key Points to Cover *</label>
+      <textarea id="scriptPoints" placeholder="List the main points, one per line"></textarea>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Video Length</label>
+        <select id="scriptLength"><option>Short (3-5 min)</option><option selected>Medium (8-10 min)</option><option>Long (15-20 min)</option></select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tone</label>
+        <select id="scriptTone"><option>Educational</option><option>Casual</option><option>Motivational</option><option>Entertaining</option><option>Professional</option></select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Channel Name <span>(optional)</span></label>
+      <input type="text" id="scriptChannel" placeholder="e.g. LifeWithJohn"/>
+    </div>
+    <button class="btn-generate" onclick="generateScript()">🎬 Generate Script</button>
+    <div class="error-box" id="scriptError"><span>⚠</span><span id="scriptErrorMsg"></span></div>
+  </div>
+  <div class="loader" id="scriptLoader"><div class="loader-dots"><div class="ldot"></div><div class="ldot"></div><div class="ldot"></div></div><div class="loader-text">Writing your video script…</div></div>
+  <div class="result-card" id="scriptResult">
+    <div class="result-header"><div class="result-title">🎬 Generated Script</div><span class="result-badge">✓ READY</span></div>
+    <div style="background:var(--off);border:1.5px solid var(--border);border-radius:var(--r-sm);padding:20px;margin-bottom:12px;max-height:500px;overflow-y:auto"><div id="scriptContent" class="result-content"></div></div>
+    <div style="font-size:.75rem;color:var(--muted);margin-bottom:12px"><span id="scriptWords">0</span> words · Est. <span id="scriptTime">0</span> min</div>
+    <div class="copy-row">
+      <button class="btn-copy" id="copyScriptBtn" onclick="copyScript()">📋 Copy Full Script</button>
+      <button class="btn-copy" onclick="generateScript()">🔄 Regenerate</button>
+    </div>
+  </div>
+
+  <div class="article">
+    <h2>How to Write a YouTube Script That Keeps Viewers Watching</h2>
+    <p>A good script is the backbone of every successful YouTube video. It keeps you on track, helps you deliver information clearly, and ensures you hook viewers from the very first second. Even casual-looking videos from top creators are usually scripted or carefully planned.</p>
+    <h3>The First 30 Seconds Are Everything</h3>
+    <p>YouTube's algorithm pays close attention to your audience retention. If viewers click away in the first 30 seconds, it signals that your video isn't valuable. That's why every great script starts with a strong hook that immediately tells viewers what they'll get and why they should keep watching.</p>
+    <h3>Script Structure That Works</h3>
+    <ul>
+      <li><strong>Hook (0-30 sec):</strong> Grab attention and promise value</li>
+      <li><strong>Intro (30-60 sec):</strong> Introduce yourself and the topic</li>
+      <li><strong>Main content:</strong> Deliver your key points with smooth transitions</li>
+      <li><strong>Call to action:</strong> Ask for likes, comments, and subscribes</li>
+      <li><strong>Outro:</strong> Recap and tease your next video</li>
+    </ul>
+    <h3>Write the Way You Speak</h3>
+    <p>The biggest mistake new creators make is writing scripts like formal essays. Instead, write conversationally — the way you'd actually talk to a friend. Use short sentences, contractions, and a natural rhythm. Read your script out loud and adjust anything that sounds stiff or unnatural.</p>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> This YouTube Script Generator is a free tool provided for informational and educational purposes only. Generated scripts are templates and starting points based on your input. They should be reviewed, personalized, and edited to match your unique voice and content before filming. We do not guarantee any specific results, views, or engagement. This tool is not affiliated with YouTube or Google LLC.
+  </div>
+</div>
+<footer>
+  <div class="footer-logo">ThumbnailGrab</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="tag-generator.html">Tags</a><a href="title-generator.html">Titles</a><a href="description-generator.html">Description</a><a href="hashtag-generator.html">Hashtags</a><a href="script-generator.html">Script</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a>
+  </div>
+  <div class="footer-copy">© 2026 ThumbnailGrab. Not affiliated with YouTube or Google LLC.</div>
+</footer>
+<script>
+function generateScript(){
+  const title=document.getElementById('scriptTitle').value.trim();
+  const points=document.getElementById('scriptPoints').value.trim();
+  document.getElementById('scriptError').classList.remove('visible');
+  if(!title){document.getElementById('scriptErrorMsg').textContent='Please enter a video title or topic.';document.getElementById('scriptError').classList.add('visible');return;}
+  if(!points){document.getElementById('scriptErrorMsg').textContent='Please enter the key points to cover.';document.getElementById('scriptError').classList.add('visible');return;}
+  document.getElementById('scriptLoader').classList.add('visible');
+  document.getElementById('scriptResult').classList.remove('visible');
+  setTimeout(()=>{
+    const len=document.getElementById('scriptLength').value;
+    const ch=document.getElementById('scriptChannel').value.trim()||'this channel';
+    const ptList=points.split('\n').filter(p=>p.trim());
+    const isShort=len.includes('Short'),isLong=len.includes('Long');
+    const dur=isShort?'few minutes':isLong?'20 minutes':'10 minutes';
+    const mark=isShort?'minute 2':isLong?'minute 10':'minute 5';
+    const script=`[HOOK — First 30 Seconds]
+
+Hey, what if I told you that ${title.toLowerCase()} could completely change the way you think about this? In the next ${dur}, I'm going to show you exactly how — step by step. Stick around, because the tip at ${mark} is a game changer.
+
+[PAUSE]
+
+━━━━━━━━━━━━━━━━━━━━━
+[INTRO]
+
+What's up everyone, welcome back to ${ch}! If you're new here, welcome — hit that subscribe button so you don't miss anything.
+
+Today we're diving into ${title}. This is something I get asked about all the time, so I put together the most complete guide I could. Let's jump in.
+
+[PAUSE]
+
+━━━━━━━━━━━━━━━━━━━━━
+[MAIN CONTENT]
+
+${ptList.map((pt,i)=>{const c=pt.replace(/^[-•*\d\.]+\s*/,'').trim();return `--- Point ${i+1}: ${c} ---
+
+So let's talk about ${c.toLowerCase()}. This is one of the most important things to understand.
+
+[Look at camera] Here's what most people get wrong — they overcomplicate it. But once you break it down, it's actually simple.
+
+${isLong?`Let me explain in detail. First, make sure you've got the basics right. Then take your time and follow each step carefully. Consistency is key here — getting this right from the start saves you so much time later.\n\n[Show example on screen]\n\nAs you can see, when you do it this way the results speak for themselves.`:`The key is to take it one step at a time. Don't overthink it — just follow the process and you'll get great results.`}
+
+[PAUSE]
+`;}).join('\n')}
+━━━━━━━━━━━━━━━━━━━━━
+[CALL TO ACTION]
+
+Alright, those are my top tips for ${title.toLowerCase()}. Which one was most helpful for you? Let me know in the comments — I read every single one!
+
+[Look at camera] And if you got value from this video, please smash that like button. It takes one second and helps the channel so much.
+
+[PAUSE]
+
+If you haven't subscribed yet — what are you waiting for? [Point to subscribe button] Hit subscribe and the notification bell so you never miss a new video.
+
+━━━━━━━━━━━━━━━━━━━━━
+[OUTRO]
+
+Quick recap of what we covered:
+${ptList.map((p,i)=>`${i+1}. ${p.replace(/^[-•*\d\.]+\s*/,'').trim()}`).join('\n')}
+
+Want to go deeper? Check out more videos on ${ch} — I've got plenty that'll help you.
+
+[Wave] That's it for today. Thanks so much for watching — see you in the next one!`;
+    document.getElementById('scriptContent').textContent=script;
+    const w=script.split(/\s+/).filter(x=>x).length;
+    document.getElementById('scriptWords').textContent=w.toLocaleString();
+    document.getElementById('scriptTime').textContent=Math.ceil(w/130);
+    document.getElementById('scriptLoader').classList.remove('visible');
+    document.getElementById('scriptResult').classList.add('visible');
+  },1000);
+}
+function copyScript(){navigator.clipboard.writeText(document.getElementById('scriptContent').textContent);const b=document.getElementById('copyScriptBtn');b.textContent='✓ Copied!';b.classList.add('copied');setTimeout(()=>{b.textContent='📋 Copy Full Script';b.classList.remove('copied');},2000);}
+</script>
+</body>
+</html>
