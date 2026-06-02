@@ -45,6 +45,12 @@
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
+    <url>
+    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/tags-vs-hashtags.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 <url>
     <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/blog.html</loc>
     <priority>0.8</priority>
