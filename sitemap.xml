@@ -39,7 +39,13 @@
     <changefreq>monthly</changefreq>
   </url>
 
-  <url>
+  
+    <url>
+    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/youtube-algorithm-explained.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+<url>
     <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/blog.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
