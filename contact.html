@@ -71,12 +71,12 @@ footer a:hover{color:#fff}
       <div class="info-card">
         <h3>📧 Email Us</h3>
         <p>For general inquiries and support:</p>
-        <a href="mailto:hello@thumbnailgrab.com">hello@thumbnailgrab.com</a>
+        <a href="mailto:thumbnailgrab@gmail.com">thumbnailgrab@gmail.com</a>
       </div>
       <div class="info-card">
         <h3>🔒 Privacy Concerns</h3>
         <p>For privacy-related questions:</p>
-        <a href="mailto:privacy@thumbnailgrab.com">privacy@thumbnailgrab.com</a>
+        <a href="mailto:thumbnailgrab@gmail.com">thumbnailgrab@gmail.com</a>
       </div>
       <div class="info-card">
         <h3>⚡ Response Time</h3>
@@ -146,11 +146,16 @@ footer a:hover{color:#fff}
 <script>
 function submitForm(){
   const f=document.getElementById('fname').value.trim();
+  const l=document.getElementById('lname').value.trim();
   const e=document.getElementById('email').value.trim();
   const s=document.getElementById('subject').value;
   const m=document.getElementById('message').value.trim();
   if(!f||!e||!s||!m){alert('Please fill in all required fields.');return;}
   if(!e.includes('@')){alert('Please enter a valid email address.');return;}
+  // Open the user's email app pre-filled, addressed to our real inbox
+  const subject=encodeURIComponent('['+s+'] Message from '+f+' '+l);
+  const body=encodeURIComponent('Name: '+f+' '+l+'\nEmail: '+e+'\n\nMessage:\n'+m);
+  window.location.href='mailto:thumbnailgrab@gmail.com?subject='+subject+'&body='+body;
   document.getElementById('successBox').classList.add('show');
   document.getElementById('fname').value='';
   document.getElementById('lname').value='';
