@@ -2,93 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/</loc>
+    <loc>https://thumbgrabhq.com/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/tag-generator.html</loc>
+    <loc>https://thumbgrabhq.com/tag-generator.html</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/title-generator.html</loc>
+    <loc>https://thumbgrabhq.com/title-generator.html</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/description-generator.html</loc>
+    <loc>https://thumbgrabhq.com/description-generator.html</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/hashtag-generator.html</loc>
+    <loc>https://thumbgrabhq.com/hashtag-generator.html</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/script-generator.html</loc>
+    <loc>https://thumbgrabhq.com/script-generator.html</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/youtube-seo-guide.html</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  
-    <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/youtube-algorithm-explained.html</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-    <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/tags-vs-hashtags.html</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/youtube-title-formulas.html</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/how-to-write-video-script.html</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-<url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/blog.html</loc>
+    <loc>https://thumbgrabhq.com/blog.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>https://thumbgrabhq.com/youtube-seo-guide.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thumbgrabhq.com/youtube-algorithm-explained.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thumbgrabhq.com/tags-vs-hashtags.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thumbgrabhq.com/youtube-title-formulas.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thumbgrabhq.com/how-to-write-video-script.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/about.html</loc>
+    <loc>https://thumbgrabhq.com/about.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/contact.html</loc>
+    <loc>https://thumbgrabhq.com/contact.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/privacy-policy.html</loc>
+    <loc>https://thumbgrabhq.com/privacy-policy.html</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/terms.html</loc>
+    <loc>https://thumbgrabhq.com/terms.html</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://thumbgrab.github.io/yt-thumbnail-downloader/disclaimer.html</loc>
+    <loc>https://thumbgrabhq.com/disclaimer.html</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
